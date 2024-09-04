@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background for the page */
+    font-family: Arial, sans-serif; /* Add a default font for menu */
+}
+
+#pongCanvas {
+    border: 1px solid #fff; /* White border for visibility */
+    background-color: #008000; /* Green background for the field */
+}
+
+canvas:focus {
+    outline: none; /* Remove focus outline when canvas is clicked */
+}
+
+/* Optional: Add styling for in-game messages, such as game-over or pause screens */
+#game-over-message {
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none; /* Hide by default, can be shown when needed */
+}
